@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
-  background-color: black;
-  color: white;
+
+  overflow: hidden;
 }
 
 .main-wrapper {
   min-height: 100vh;
+  background-color: black;
+  color: white;
 }
 /************ HEADER *************/
 
@@ -16,7 +18,7 @@ header {
   width: 90%;
   /* Feel free to tinker with the max-width */
   max-width: -100px;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 header .navigation {
@@ -62,6 +64,7 @@ header .nav-bar li a:hover {
   border: gray;
   cursor: pointer;
   color: white;
+  background-color: black;
 }
 .signin button.signIn:hover {
   border-radius: 2px solid black;
@@ -135,9 +138,15 @@ button.started:hover {
   margin-top: 50px;
 }
 .profile img {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
+  padding-bottom: 20px;
   object-fit: cover;
   border-radius: 5px;
   border: 2px solid black;
+}
+
+section {
+  background: white;
+  color: black;
 }
