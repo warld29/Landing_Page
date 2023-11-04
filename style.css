@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
-
-  overflow: hidden;
 }
 
 .main-wrapper {
@@ -19,6 +17,7 @@ header {
   /* Feel free to tinker with the max-width */
   max-width: -100px;
   margin: 5px auto;
+  overflow: hidden;
 }
 
 header .navigation {
@@ -146,7 +145,330 @@ button.started:hover {
   border: 2px solid black;
 }
 
+/************ SECTION *************/
+
 section {
-  background: white;
+  min-height: 50vh;
+  background-color: white;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature .summary {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.feature .summary h2 {
+  font-size: 30px;
+  padding: 25px 0;
+  font-weight: bold;
+}
+
+.feature .summary p {
+  padding: 5px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 13px;
+  line-height: 15px;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 19px 0;
+}
+
+.passport {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  font-weight: 25px;
+  font-family: fantasy;
+}
+
+.passport .passport_profile {
+  background-color: gray;
+  border-radius: 5px;
+  height: 280px;
+  width: 400px;
+}
+.passport .passport_profilep {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.passport .passporti {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin: 7px 15px;
+  height: 120px;
+  width: 101%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  padding: 5px 3px;
+}
+.passport .passportii {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  margin: 18px 5px;
+  margin-right: 1200px;
+  height: 120px;
+  width: 105%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  padding: 5px 3px;
+  left: 50px;
+}
+.passport img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.passport .qualification h2 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 17px 0;
+}
+
+.passport .qualification p {
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
+.passport .qualification button {
+  padding: 19px 25px;
+  margin: 15px 0;
+  font-size: 23px;
+  border: gray;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.passport .qualification button:hover {
+  background-color: gold;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/************ ASIDE *************/
+aside {
+  height: 70vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 25rem;
+}
+
+aside .asideNotes {
+  height: 30%;
+}
+
+.asideNotes .cources h2 {
+  font-size: 30px;
+  padding: 3.5rem 0;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.asideNotes .link .note p {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.link .mainLink a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.link .mainLink a:hover {
+  border-bottom: 3px solid gold;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.asideNotes .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+aside .asideimages {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+aside .asideImage {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+aside .asideCourse {
+  height: 100px;
+  width: 190px;
+  background-color: white;
+  padding: 5px 7px;
+  box-shadow: 0px 0px 5px black;
+  margin-left: 5rem;
+  position: absolute;
+  right: -40%;
+  bottom: -50px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+aside .asideImage img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/******* ARTICLE *************/
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+}
+
+article .newsLetter {
+  text-align: center;
+  margin: 12px 0;
+}
+
+article .newsLetter h2 {
+  font-size: 30px;
+  padding: 7px 0;
+}
+
+article .newsLetter p {
+  font-size: 20px;
+  padding: 7px 0;
+}
+
+form {
+  /* This bit sets up the horizontal layout */
+  display: flex;
+  flex-direction: row;
+
+  /* This bit draws the box around it */
+  border: 1px solid grey;
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding: 1px;
+}
+
+input {
+  /* Tell the input to use all the available space */
+  flex-grow: 2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border: 1px solid white;
+  height: 56px;
+  width: 290px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* remove the input focus blue box, it will be in the wrong place. */
+input:focus {
+  outline: none;
+}
+
+/* Add the focus effect to the form so it contains the button */
+form:focus-within {
+  outline: 1px solid blue;
+}
+
+button.article {
+  /* Just a little styling to make it pretty */
+  border: 1px solid gold;
+  background: gold;
+  color: white;
+  height: 56px;
+  width: 140px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 30vh;
+}
+
+footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23rem;
+  padding: 50px 0;
+}
+
+footer .contact h2 {
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+footer .contact p {
+  font-size: 15px;
+}
+
+footer .company h2 {
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+footer .company ul li {
+  list-style: none;
+  font-size: 15px;
+}
+
+footer .support h2 {
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+footer .support ul li {
+  list-style: none;
+  font-size: 15px;
 }
