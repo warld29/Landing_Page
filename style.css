@@ -38,6 +38,10 @@ header .brand h1 {
   font-size: 45px;
 }
 
+.bar {
+  display: none;
+}
+
 header .nav-bar ul {
   display: flex;
   gap: 20px;
@@ -471,4 +475,149 @@ footer .support h2 {
 footer .support ul li {
   list-style: none;
   font-size: 15px;
+}
+
+/* Tablet styles - Adjust these for tablets (e.g., iPad) */
+@media (max-width: 990px) {
+  body {
+    .main-wrapper header {
+      width: 100%;
+      /* Feel free to tinker with the max-width */
+      max-width: -100px;
+      margin: 5px auto;
+      overflow: hidden;
+      background-color: black;
+      padding: 0 7px;
+    }
+
+    .main-wrapper header .nav-bar li a {
+      text-decoration: none;
+      font-size: 17px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .bar {
+      display: none;
+    }
+
+    .main-wrapper header .nav-bar li a:hover {
+      color: gold;
+      transition: 0.5s;
+    }
+
+    .main-wrapper p {
+      font-size: 12px;
+    }
+    .signin button {
+      padding: 10px 16px;
+      font-size: 17px;
+      border: gray;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+    }
+    .signin button.signIn:hover {
+      border-radius: 2px solid black;
+      background-color: gold;
+      color: white;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+
+    .signin button.started {
+      border-radius: 2px solid black;
+      background-color: white;
+      color: black;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+    .signin button.started:hover {
+      font-weight: bold;
+      transition: 0.5s;
+      color: white;
+      background-color: gold;
+    }
+
+    .main-wrapper .round {
+      display: none;
+    }
+    .passport {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+      gap: 50px;
+      font-weight: 18px;
+      font-family: fantasy;
+    }
+    #pricing {
+      width: 100%;
+      background-color: white;
+      color: black;
+      display: block;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0 2.5rem;
+    }
+
+    .asideNotes .cources h2 {
+      font-size: 20px;
+      padding: 3rem 0;
+    }
+
+    .asideNotes .link .note p {
+      font-size: 15px;
+    }
+
+    .link .mainLink a {
+      color: black;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: "Times New Roman", Times, serif;
+      height: 20rem;
+      width: 20px;
+      background-color: black;
+      color: white;
+      padding: 25px 25px;
+      border-radius: 40px;
+    }
+
+    .link .mainLink a:hover {
+      background-color: gold;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+
+    .asideNotes .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 5rem;
+      padding-top: 17px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  body {
+    .nav-bar {
+      display: flex;
+    }
+    .nav-bar ul {
+      display: none;
+    }
+
+    .signin {
+      display: none;
+    }
+  }
 }
