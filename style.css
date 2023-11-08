@@ -288,6 +288,10 @@ aside {
   padding: 0 25rem;
 }
 
+aside .viewPrices {
+  display: none;
+}
+
 aside .asideNotes {
   height: 30%;
 }
@@ -448,15 +452,15 @@ footer .contact {
   align-items: center;
   justify-content: center;
   gap: 23rem;
-  padding: 50px 0;
+  padding: 50px 50px;
 }
 
-footer .contact h2 {
+footer .warld h2 {
   font-size: 25px;
   padding: 15px 0;
 }
 
-footer .contact p {
+footer .warld p {
   font-size: 15px;
 }
 
@@ -764,21 +768,99 @@ footer .support ul li {
       margin-bottom: 50px;
     }
     .asideimages {
-      min-height: 70vh;
-      width: 100%;
+      display: none;
+    }
+
+    .viewPrices {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
-      margin-top: 15rem;
+      justify-content: center;
       cursor: pointer;
+      padding: 35px 0;
+    }
+    .viewPrices h2 {
+      padding: 17px 0;
     }
 
     .about article {
       display: flex;
       height: 70vh;
-      align-items: baseline;
-      justify-content: end;
+      width: 50%;
+    }
+    .input-container {
+      /* This bit sets up the horizontal layout */
+      display: flex;
+      flex-direction: row;
+
+      width: 35rem;
+      margin: 2rem auto;
+
+      /* This bit draws the box around it */
+      border: 1px solid black;
+
+      /* I've used padding so you can see the edges of the elements. */
+    }
+
+    input {
+      /* Tell the input to use all the available space */
+      flex-grow: 2;
+      /* And hide the input's outline, so the form looks like the outline */
+      border: 1px solid white;
+      height: 46px;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+
+    /* remove the input focus blue box, it will be in the wrong place. */
+    input:focus {
+      outline: none;
+      font-size: 20px;
+    }
+
+    /* Add the focus effect to the form so it contains the button */
+    .input-container:focus-within {
+      outline: 1px solid black;
+    }
+
+    .contact footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 23px;
+      padding: 20px 0;
+    }
+    .contact .warld h2 {
+      font-size: 22px;
+      padding: 10px 0;
+    }
+
+    .contact .warld p {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .contact .company h2 {
+      font-size: 22px;
+      padding: 10px 0;
+    }
+
+    .contact .company ul li {
+      list-style: none;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .contact .support h2 {
+      font-size: 22px;
+      padding: 10px 0;
+    }
+
+    .contact .support ul li {
+      list-style: none;
+      font-size: 12px;
+      white-space: nowrap;
     }
   }
 }
