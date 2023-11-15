@@ -1,15 +1,22 @@
-var bar = document.getElementsByClassName("bar");
-var close = document.getElementsByClassName("close");
-var navBar = document.getElementsByClassName("nav-bar")
+const open = document.getElementById("bar");
+const closed = document.getElementById("close");
+const navBar = document.getElementById("nav-bar")
+const homelink = document.getElementById("homeLink")
 
 
-if(bar){
-  bar.addEventListener('click', () =>{
+if(open){
+  open.addEventListener('click', () =>{
     navBar.classList.add('active')
   })
 }
-if(close){
-  close.addEventListener('click', () =>{
+if(closed){
+  closed.addEventListener('click', () =>{
     navBar.classList.remove('active')
+  })
+}
+
+if(homelink){
+  homelink.addEventListener(click, () =>{
+    window.location.href ='index.html';
   })
 }

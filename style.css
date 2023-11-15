@@ -644,16 +644,18 @@ footer .support ul li {
     }
     .bar {
       display: flex;
-      margin-left: 21.5rem;
+      justify-content: center;
+      align-items: center;
+      margin-left: 19.5rem;
       cursor: pointer;
       min-height: 20vh;
       width: 100%;
     }
     .nav-bar ul li a.close {
       display: initial;
-      position: absolute;
+      /*position: absolute;
       top: 30px;
-      left: 30px;
+      left: 30px; */
       font-size: 20px;
     }
     .nav-bar ul {
@@ -667,7 +669,7 @@ footer .support ul li {
       justify-content: flex-start;
       position: fixed;
       top: 0;
-      left: 100px;
+      right: 300px;
       height: 150vh;
       width: 80%;
       background-color: black;
@@ -675,10 +677,13 @@ footer .support ul li {
       transition: 0.4s;
       gap: 10rem;
       text-align: center;
+      visibility: hidden;
+      overflow: hidden;
     }
 
     .nav-bar.active {
-      left: 0px;
+      right: 0px;
+      visibility: visible;
     }
 
     .nav-bar li {
